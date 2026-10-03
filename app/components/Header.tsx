@@ -62,9 +62,9 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-10">
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/logo-uRIDvwHW.png"
+            src="/images/logo-sci.png"
             alt="SCI Royal Estate"
-            width={48}
+            width={73}
             height={48}
           />
         </Link>

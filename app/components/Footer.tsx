@@ -20,9 +20,9 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-2">
           <Image
-            src="/images/logo-uRIDvwHW.png"
+            src="/images/logo-sci.png"
             alt="SCI Royal Estate"
-            width={56}
+            width={85}
             height={56}
           />
           <p className="mt-4 max-w-sm text-sm leading-relaxed">
