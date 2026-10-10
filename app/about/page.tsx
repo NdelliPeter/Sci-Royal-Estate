@@ -99,7 +99,7 @@ const LEADERSHIP = [
 
 function Eyebrow({ children }: { children: string }) {
   return (
-    <p className="text-sm font-semibold tracking-widest text-[#C9A549]">
+    <p className="text-sm font-semibold tracking-widest text-[#9E8147]">
       {children}
     </p>
   );
@@ -117,39 +117,39 @@ export default function AboutPage() {
           subtitle="We are a privately-held Cameroonian group of six companies — patient owners of residential, hospitality and commercial real estate, and partners to those who want to invest alongside us."
         />
 
-        <section className="mx-auto max-w-6xl px-6 py-20">
+        <section className="mx-auto max-w-6xl bg-[#FAF8F3] px-6 py-20">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div>
               <Eyebrow>OUR ORIGIN</Eyebrow>
-              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-                <span className="text-[#E8E5E0]">A quiet beginning in</span>{" "}
-                <span className="text-[#C9A549]">Douala, 2005.</span>
+              <h2 className="mt-3 text-3xl font-bold text-[#1A1A1A] sm:text-4xl">
+                A quiet beginning in{" "}
+                <span className="text-[#9E8147]">Douala, 2005.</span>
               </h2>
-              <p className="mt-6 text-base leading-relaxed text-[#8C8781]">
+              <p className="mt-6 text-base leading-relaxed text-[#3A3F42]">
                 SCI Royal Estate was founded as a single-asset family
                 holding — a way to bring discipline and professional
                 management to a portfolio that had grown by the decade, not
                 by the quarter.
               </p>
-              <p className="mt-4 text-base leading-relaxed text-[#8C8781]">
+              <p className="mt-4 text-base leading-relaxed text-[#3A3F42]">
                 Twenty years on, the holding has become a group of six
                 operating companies, each built around a discipline we
                 first learned by running our own properties. We develop, we
                 own, we manage — and we only extend our services to third
                 parties once they have been proven on our own assets.
               </p>
-              <p className="mt-4 text-base leading-relaxed text-[#8C8781]">
+              <p className="mt-4 text-base leading-relaxed text-[#3A3F42]">
                 Our approach is rooted in three commitments that have not
                 changed since day one:{" "}
-                <strong className="font-semibold text-[#E8E5E0]">
+                <strong className="font-semibold text-[#1A1A1A]">
                   own the long term
                 </strong>
                 ,{" "}
-                <strong className="font-semibold text-[#E8E5E0]">
+                <strong className="font-semibold text-[#1A1A1A]">
                   serve the tenant
                 </strong>
                 , and{" "}
-                <strong className="font-semibold text-[#E8E5E0]">
+                <strong className="font-semibold text-[#1A1A1A]">
                   respect the capital
                 </strong>
                 .
@@ -171,7 +171,7 @@ export default function AboutPage() {
             <div>
               <Eyebrow>OUR MISSION</Eyebrow>
               <h3 className="mt-3 text-2xl font-bold text-[#1A1A1A]">
-                Driving <span className="text-[#C9A549]">Innovation</span>
+                Driving <span className="text-[#9E8147]">Innovation</span>
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-[#3A3F42]">
                 SCI Royal Estate is a real estate management company that
@@ -190,7 +190,7 @@ export default function AboutPage() {
             <div>
               <Eyebrow>OUR VISION</Eyebrow>
               <h3 className="mt-3 text-2xl font-bold text-[#1A1A1A]">
-                Market <span className="text-[#C9A549]">Leadership</span>
+                Market <span className="text-[#9E8147]">Leadership</span>
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-[#3A3F42]">
                 In the next few years, we hope for SCI Royal Estate and its
@@ -211,13 +211,13 @@ export default function AboutPage() {
           <div className="mx-auto max-w-5xl">
             <Eyebrow>WHAT DRIVES US</Eyebrow>
             <h2 className="mt-3 text-3xl font-bold text-[#1A1A1A] sm:text-4xl">
-              Core <span className="text-[#C9A549]">Values</span>
+              Core <span className="text-[#9E8147]">Values</span>
             </h2>
             <div className="mt-12 grid grid-cols-1 gap-6 text-left sm:grid-cols-2">
               {CORE_VALUES.map((value) => (
                 <div
                   key={value.title}
-                  className="rounded-sm border border-[#E3DDD1] bg-white p-8 transition-colors hover:border-[#C9A549]/50"
+                  className="rounded-sm border border-[#E3DDD1] bg-white p-8 transition-colors hover:border-[#B89A5E]/50"
                 >
                   <h4 className="text-lg font-semibold text-[#1A1A1A]">
                     {value.title}
@@ -238,7 +238,7 @@ export default function AboutPage() {
               <h2 className="mt-3 text-3xl font-bold text-[#1A1A1A] sm:text-4xl">
                 Two decades, one trajectory.
               </h2>
-              <div className="mt-4 h-px w-16 bg-[#C9A549]" />
+              <div className="mt-4 h-px w-16 bg-[#9E8147]" />
               <p className="mt-6 text-base leading-relaxed text-[#3A3F42]">
                 A brief look at how the group came to be, and the
                 milestones that shaped the way we operate today.
@@ -248,7 +248,7 @@ export default function AboutPage() {
             <div className="space-y-8 border-l border-[#E3DDD1] pl-8">
               {TIMELINE.map((item) => (
                 <div key={item.year}>
-                  <p className="text-sm font-semibold tracking-widest text-[#C9A549]">
+                  <p className="text-sm font-semibold tracking-widest text-[#9E8147]">
                     {item.year}
                   </p>
                   <h4 className="mt-1 text-lg font-semibold text-[#1A1A1A]">
@@ -269,7 +269,7 @@ export default function AboutPage() {
             <h2 className="mt-3 text-3xl font-bold text-[#1A1A1A] sm:text-4xl">
               The people who steward the group.
             </h2>
-            <div className="mx-auto mt-4 h-px w-16 bg-[#C9A549]" />
+            <div className="mx-auto mt-4 h-px w-16 bg-[#9E8147]" />
 
             <div className="mt-12 grid grid-cols-1 gap-8 text-left sm:grid-cols-3">
               {LEADERSHIP.map((leader) => (
@@ -288,7 +288,7 @@ export default function AboutPage() {
                       </span>
                     )}
                   </div>
-                  <p className="mt-4 text-xs font-semibold tracking-widest text-[#C9A549]">
+                  <p className="mt-4 text-xs font-semibold tracking-widest text-[#9E8147]">
                     {leader.role}
                   </p>
                   <h3 className="mt-1 text-lg font-semibold text-[#1A1A1A]">
@@ -305,22 +305,22 @@ export default function AboutPage() {
 
         <OurGroup />
 
-        <section className="bg-[#121212] px-6 py-20 text-center">
+        <section className="bg-[#1F2A2E] px-6 py-20 text-center">
           <div className="mx-auto max-w-2xl">
             <p className="text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
               CAREERS
             </p>
-            <h2 className="mt-4 text-3xl font-bold text-[#E8E5E0] sm:text-4xl">
+            <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
               Join a group built for the long term.
             </h2>
-            <p className="mt-6 text-base text-[#8C8781]">
+            <p className="mt-6 text-base text-[#D4D8DA]">
               We recruit slowly and we train thoroughly. If you share our
               commitment to quality, patience and service, we would be
               glad to hear from you.
             </p>
             <a
               href="/contact#careers"
-              className="mt-8 inline-block bg-[#C9A549] px-8 py-3 text-sm font-semibold tracking-widest text-[#121212] transition hover:bg-[#b8943f]"
+              className="mt-8 inline-block bg-[#B89A5E] px-8 py-3 text-sm font-semibold tracking-widest text-white transition hover:bg-[#9E8147]"
             >
               EXPLORE OPPORTUNITIES &rarr;
             </a>

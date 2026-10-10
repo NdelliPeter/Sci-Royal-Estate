@@ -42,7 +42,7 @@ export default function TechnologyPage() {
   return (
     <>
       <Header />
-      <main className="bg-[#121212]">
+      <main className="bg-[#1F2A2E]">
         <PageHero
           eyebrow="SERVICES"
           title="Real Estate"
@@ -61,13 +61,13 @@ export default function TechnologyPage() {
               />
             </div>
             <div className="lg:order-2">
-              <p className="text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+              <p className="text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
                 TECHNOLOGY
               </p>
-              <h2 className="mt-4 text-3xl font-bold text-[#E8E5E0] sm:text-4xl">
-                Our <em className="italic text-[#C9A549]">Solutions</em>
+              <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
+                Our <em className="italic text-[#D4BC85]">Solutions</em>
               </h2>
-              <p className="mt-6 text-sm leading-relaxed text-[#8C8781]">
+              <p className="mt-6 text-sm leading-relaxed text-[#D4D8DA]">
                 SCI Royal Estate provides technology solutions for the real
                 estate and hospitality sector in Cameroon and Africa. Our
                 solutions are built for hotels and hospitality operators.
@@ -80,15 +80,15 @@ export default function TechnologyPage() {
               <a
                 key={solution.href}
                 href={solution.href}
-                className="group block border border-[#2E2E2E] p-8 transition-colors hover:border-[#C9A549]"
+                className="group block border border-white/15 p-8 transition-colors hover:border-[#B89A5E]"
               >
-                <h3 className="text-xl font-semibold text-[#E8E5E0] transition-colors group-hover:text-[#C9A549]">
+                <h3 className="text-xl font-semibold text-white transition-colors group-hover:text-[#D4BC85]">
                   {solution.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-[#8C8781]">
+                <p className="mt-3 text-sm leading-relaxed text-[#D4D8DA]">
                   {solution.description}
                 </p>
-                <span className="mt-4 inline-block text-xs font-semibold tracking-widest text-[#C9A549] group-hover:underline">
+                <span className="mt-4 inline-block text-xs font-semibold tracking-widest text-[#D4BC85] group-hover:underline">
                   LEARN MORE →
                 </span>
               </a>

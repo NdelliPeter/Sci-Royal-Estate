@@ -33,8 +33,8 @@ function StatusBadge({ status }: { status: string }) {
     <span
       className={`mt-2 inline-block rounded-sm px-3 py-1 text-xs font-semibold tracking-widest ${
         isOperational
-          ? "bg-[#C9A549]/20 text-[#C9A549]"
-          : "bg-[#242424] text-[#8C8781]"
+          ? "bg-[#B89A5E]/20 text-[#D4BC85]"
+          : "bg-[#2D3A3F] text-[#A8ADB0]"
       }`}
     >
       {status}
@@ -46,7 +46,7 @@ export default function ResidenceLecrinPage() {
   return (
     <>
       <Header />
-      <main className="bg-[#121212]">
+      <main className="bg-[#1F2A2E]">
         <PageHero
           eyebrow="HOSPITALITY"
           title="Résidence"
@@ -57,31 +57,31 @@ export default function ResidenceLecrinPage() {
         <section className="mx-auto max-w-6xl px-6 py-24">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
             <div>
-              <p className="text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+              <p className="text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
                 WHAT WE OFFER
               </p>
-              <h2 className="mt-4 text-3xl font-bold text-[#E8E5E0] sm:text-4xl">
+              <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
                 A Typical L&apos;écrin{" "}
-                <em className="italic text-[#C9A549]">Property</em>
+                <em className="italic text-[#D4BC85]">Property</em>
               </h2>
               <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {OFFERINGS.map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-3 rounded-sm border border-[#2E2E2E] p-3"
+                    className="flex items-center gap-3 rounded-sm border border-white/15 p-3"
                   >
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A549]" />
-                    <span className="text-sm text-[#E8E5E0]/80">{item}</span>
+                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#B89A5E]" />
+                    <span className="text-sm text-[#D4D8DA]/80">{item}</span>
                   </div>
                 ))}
               </div>
-              <p className="mt-6 text-sm text-[#8C8781]">
+              <p className="mt-6 text-sm text-[#A8ADB0]">
                 Website:{" "}
                 <a
                   href="https://www.residencelecrin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#C9A549] hover:underline"
+                  className="text-[#D4BC85] hover:underline"
                 >
                   www.residencelecrin.com
                 </a>
@@ -98,23 +98,23 @@ export default function ResidenceLecrinPage() {
           </div>
         </section>
 
-        <section className="border-y border-[#2E2E2E] bg-[#1A1A1A] px-6 py-24">
+        <section className="border-y border-white/15 bg-[#2D3A3F] px-6 py-24">
           <div className="mx-auto max-w-6xl">
             <div className="text-center">
-              <p className="text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+              <p className="text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
                 LOCATIONS
               </p>
-              <h2 className="mt-4 text-3xl font-bold text-[#E8E5E0] sm:text-4xl">
-                Our <em className="italic text-[#C9A549]">Properties</em>
+              <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
+                Our <em className="italic text-[#D4BC85]">Properties</em>
               </h2>
             </div>
             <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
               {LOCATIONS.map((loc) => (
                 <div
                   key={loc.name}
-                  className="border border-[#2E2E2E] p-8 transition-colors hover:border-[#C9A549]"
+                  className="border border-white/15 p-8 transition-colors hover:border-[#B89A5E]"
                 >
-                  <h3 className="text-xl text-[#E8E5E0]">{loc.name}</h3>
+                  <h3 className="text-xl text-white">{loc.name}</h3>
                   <StatusBadge status={loc.status} />
                 </div>
               ))}

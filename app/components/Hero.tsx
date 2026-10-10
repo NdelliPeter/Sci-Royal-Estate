@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
         <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
           Luxury Real Estate{" "}
-          <span className="text-[#C9A549]">Development</span> in Cameroon
+          <span className="text-[#D4BC85]">Development</span> in Cameroon
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-base text-neutral-100 sm:text-lg">
           SCI Royal Estate is a real estate investment and management
@@ -29,13 +29,13 @@ export default function Hero() {
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href="#divisions"
-            className="rounded-sm bg-[#C9A549] px-8 py-3 text-sm font-semibold tracking-widest text-[#121212] transition hover:bg-[#b8943f]"
+            className="rounded-sm bg-[#B89A5E] px-8 py-3 text-sm font-semibold tracking-widest text-white transition hover:bg-[#9E8147]"
           >
             EXPLORE PROPERTIES
           </a>
           <a
             href="/about"
-            className="rounded-sm border border-white px-8 py-3 text-sm font-semibold tracking-widest text-white transition hover:bg-white hover:text-[#121212]"
+            className="rounded-sm border border-white/60 px-8 py-3 text-sm font-semibold tracking-widest text-white transition hover:border-[#B89A5E] hover:bg-[#B89A5E]"
           >
             OUR STORY
           </a>

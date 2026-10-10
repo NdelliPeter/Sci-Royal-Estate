@@ -35,7 +35,7 @@ export default function Welcome() {
           </p>
           <a
             href="/about"
-            className="mt-8 inline-block rounded-sm border border-[#9E8147] px-8 py-3 text-sm font-semibold tracking-widest text-[#9E8147] transition hover:bg-[#9E8147] hover:text-[#FAF8F3]"
+            className="mt-8 inline-block rounded-sm border border-[#1F2A2E] px-8 py-3 text-sm font-semibold tracking-widest text-[#1F2A2E] transition hover:bg-[#1F2A2E] hover:text-white"
           >
             Read Our Story
           </a>

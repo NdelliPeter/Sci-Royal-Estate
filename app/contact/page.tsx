@@ -40,29 +40,29 @@ export default function ContactPage() {
           subtitle="Whether you're interested in our properties, need advisory, or want to commission a building project — our team is ready to help."
         />
 
-        <section className="mx-auto max-w-6xl px-6 py-24">
+        <section className="mx-auto max-w-6xl bg-[#FAF8F3] px-6 py-24">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-5">
             <div className="lg:col-span-2">
-              <p className="text-sm font-semibold tracking-widest text-[#C9A549]">
+              <p className="text-sm font-semibold tracking-widest text-[#9E8147]">
                 CONTACT DETAILS
               </p>
-              <h2 className="mt-3 text-3xl font-bold text-[#E8E5E0]">
+              <h2 className="mt-3 text-3xl font-bold text-[#1A1A1A]">
                 We&apos;d Love to Hear From You
               </h2>
-              <div className="mt-4 h-px w-16 bg-[#C9A549]" />
+              <div className="mt-4 h-px w-16 bg-[#9E8147]" />
 
               <div className="mt-8 space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-[#2E2E2E] text-[#C9A549]">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-[#E3DDD1] text-[#9E8147]">
                     <MailIcon />
                   </div>
                   <div>
-                    <p className="mb-1 text-xs font-semibold tracking-widest text-[#8C8781]">
+                    <p className="mb-1 text-xs font-semibold tracking-widest text-[#6E7478]">
                       EMAIL
                     </p>
                     <a
                       href="mailto:fofeyin@sciroyalestates.com"
-                      className="text-sm text-[#E8E5E0] hover:text-[#C9A549]"
+                      className="text-sm text-[#1A1A1A] hover:text-[#9E8147]"
                     >
                       fofeyin@sciroyalestates.com
                     </a>
@@ -70,16 +70,16 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-[#2E2E2E] text-[#C9A549]">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-[#E3DDD1] text-[#9E8147]">
                     <PhoneIcon />
                   </div>
                   <div>
-                    <p className="mb-1 text-xs font-semibold tracking-widest text-[#8C8781]">
+                    <p className="mb-1 text-xs font-semibold tracking-widest text-[#6E7478]">
                       PHONE
                     </p>
                     <a
                       href="tel:+18702101317"
-                      className="text-sm text-[#E8E5E0] hover:text-[#C9A549]"
+                      className="text-sm text-[#1A1A1A] hover:text-[#9E8147]"
                     >
                       +1 870 210-1317
                     </a>
@@ -87,11 +87,11 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="mt-10 border border-[#2E2E2E] bg-[#1A1A1A] p-6">
-                <p className="mb-2 text-xs font-semibold tracking-widest text-[#C9A549]">
+              <div className="mt-10 border border-white/10 bg-[#2D3A3F] p-6">
+                <p className="mb-2 text-xs font-semibold tracking-widest text-[#D4BC85]">
                   MANAGING DIRECTOR
                 </p>
-                <p className="text-lg font-semibold text-[#E8E5E0]">
+                <p className="text-lg font-semibold text-white">
                   Fofeyin Bonito Fai-Yengo
                 </p>
               </div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
               <h2 className="mt-3 text-3xl font-bold text-[#1A1A1A] sm:text-4xl">
                 We recruit slowly, and we train thoroughly.
               </h2>
-              <div className="mt-4 h-px w-16 bg-[#C9A549]" />
+              <div className="mt-4 h-px w-16 bg-[#9E8147]" />
               <p className="mt-6 text-base leading-relaxed text-[#3A3F42]">
                 The group is always interested in speaking with talented
                 people — construction professionals, property managers,
@@ -132,7 +132,7 @@ export default function ContactPage() {
               </p>
               <a
                 href="mailto:careers@sciroyalestate.com"
-                className="mt-6 inline-block border border-[#9E8147] px-8 py-3 text-sm font-semibold tracking-widest text-[#9E8147] transition hover:bg-[#9E8147] hover:text-white"
+                className="mt-6 inline-block border border-[#1F2A2E] px-8 py-3 text-sm font-semibold tracking-widest text-[#1F2A2E] transition hover:bg-[#1F2A2E] hover:text-white"
               >
                 SEND US YOUR CV &rarr;
               </a>

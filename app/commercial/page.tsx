@@ -16,7 +16,7 @@ export default function CommercialPage() {
   return (
     <>
       <Header />
-      <main className="bg-[#121212]">
+      <main className="bg-[#1F2A2E]">
         <PageHero
           eyebrow="PROPERTIES"
           title="Commercial"
@@ -27,20 +27,20 @@ export default function CommercialPage() {
         <section className="mx-auto max-w-6xl px-6 py-24">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
             <div>
-              <p className="text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+              <p className="text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
                 FEATURED PROPERTY
               </p>
-              <h2 className="mt-4 text-3xl font-bold text-[#E8E5E0]">
+              <h2 className="mt-4 text-3xl font-bold text-white">
                 Douala Farmers Club{" "}
-                <em className="italic text-[#C9A549]">Commercial Centre</em>
+                <em className="italic text-[#D4BC85]">Commercial Centre</em>
               </h2>
-              <p className="mt-6 text-[#8C8781]">
-                <span className="font-semibold text-[#E8E5E0]">
+              <p className="mt-6 text-[#D4D8DA]">
+                <span className="font-semibold text-white">
                   Location:
                 </span>{" "}
                 Bonamoussadi, Douala
               </p>
-              <p className="mt-4 text-[#8C8781]">
+              <p className="mt-4 text-[#D4D8DA]">
                 Commercial real estate comprising shops, offices, and
                 warehouses.
               </p>
@@ -49,10 +49,10 @@ export default function CommercialPage() {
                 {SPACE_TYPES.map((type) => (
                   <div
                     key={type}
-                    className="rounded-sm border border-[#2E2E2E] p-4 text-center"
+                    className="rounded-sm border border-white/15 p-4 text-center"
                   >
-                    <span className="mx-auto mb-2 block h-1.5 w-1.5 rounded-full bg-[#C9A549]" />
-                    <span className="text-sm text-[#E8E5E0]/80">{type}</span>
+                    <span className="mx-auto mb-2 block h-1.5 w-1.5 rounded-full bg-[#B89A5E]" />
+                    <span className="text-sm text-[#D4D8DA]/80">{type}</span>
                   </div>
                 ))}
               </div>
@@ -60,13 +60,13 @@ export default function CommercialPage() {
               <div className="mt-8 flex gap-4">
                 <a
                   href="/contact"
-                  className="bg-[#C9A549] px-8 py-3.5 text-xs font-semibold tracking-widest text-[#121212] transition hover:bg-[#b8943f]"
+                  className="bg-[#B89A5E] px-8 py-3.5 text-xs font-semibold tracking-widest text-white transition hover:bg-[#9E8147]"
                 >
                   ENQUIRE ABOUT SPACES
                 </a>
                 <a
                   href="/contact"
-                  className="border border-[#C9A549] px-8 py-3.5 text-xs font-semibold tracking-widest text-[#C9A549] transition hover:bg-[#C9A549] hover:text-[#121212]"
+                  className="border border-white/60 px-8 py-3.5 text-xs font-semibold tracking-widest text-white transition hover:bg-[#B89A5E] hover:border-[#B89A5E]"
                 >
                   CONTACT US
                 </a>

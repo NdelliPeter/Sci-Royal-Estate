@@ -36,7 +36,7 @@ const DIVISIONS = [
   },
   {
     title: "Architecture & Construction",
-    image: "/images/architecture-services-BlxEOs2s.jpg",
+    image: "/images/construction-guy.png",
     description:
       "Complete architectural design and construction services — from concept sketches to turnkey project delivery.",
     cta: "Our Building Services",
@@ -54,13 +54,13 @@ const DIVISIONS = [
 
 export default function Divisions() {
   return (
-    <section id="divisions" className="bg-[#121212] px-6 py-24">
+    <section id="divisions" className="bg-[#1F2A2E] px-6 py-24">
       <div className="mx-auto max-w-6xl text-center">
-        <p className="text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+        <p className="text-xs font-semibold tracking-[0.22em] text-[#D4BC85]">
           What We Do
         </p>
-        <h2 className="mt-3 text-3xl font-bold text-[#E8E5E0] sm:text-4xl">
-          Our <em className="italic text-[#C9A549]">Divisions</em>
+        <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+          Our <em className="italic text-[#D4BC85]">Divisions</em>
         </h2>
 
         <div className="mt-14 grid grid-cols-1 gap-6 text-left md:grid-cols-2 lg:grid-cols-3">
@@ -84,7 +84,7 @@ export default function Divisions() {
                 <p className="mt-2 text-sm leading-relaxed text-neutral-200">
                   {division.description}
                 </p>
-                <span className="mt-3 inline-block text-xs font-semibold tracking-widest text-[#C9A549] group-hover:underline">
+                <span className="mt-3 inline-block text-xs font-semibold tracking-widest text-[#D4BC85] group-hover:underline">
                   {division.cta}
                 </span>
               </div>

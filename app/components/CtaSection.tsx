@@ -17,12 +17,12 @@ export default function CtaSection({
   buttons: CtaButton[];
 }) {
   return (
-    <section className="bg-[#121212] px-6 py-24 text-center">
+    <section className="bg-[#1F2A2E] px-6 py-24 text-center">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-3xl font-bold text-[#E8E5E0] sm:text-4xl">
-          {title} <em className="italic text-[#C9A549]">{emphasis}</em>
+        <h2 className="text-3xl font-bold text-white sm:text-4xl">
+          {title} <em className="italic text-[#D4BC85]">{emphasis}</em>
         </h2>
-        <p className="mt-4 text-[#8C8781]">{subtitle}</p>
+        <p className="mt-4 text-[#D4D8DA]">{subtitle}</p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           {buttons.map((btn) => (
             <a
@@ -32,8 +32,8 @@ export default function CtaSection({
               rel={btn.external ? "noopener noreferrer" : undefined}
               className={
                 btn.variant === "outline"
-                  ? "border border-[#2E2E2E] px-8 py-3.5 text-xs font-semibold tracking-widest text-[#E8E5E0] transition hover:border-[#C9A549] hover:text-[#C9A549]"
-                  : "bg-[#C9A549] px-8 py-3.5 text-xs font-semibold tracking-widest text-[#121212] transition hover:bg-[#b8943f]"
+                  ? "border border-white/60 px-8 py-3.5 text-xs font-semibold tracking-widest text-white transition hover:bg-[#B89A5E] hover:border-[#B89A5E]"
+                  : "bg-[#B89A5E] px-8 py-3.5 text-xs font-semibold tracking-widest text-white transition hover:bg-[#9E8147]"
               }
             >
               {btn.label}

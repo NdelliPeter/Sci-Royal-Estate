@@ -29,7 +29,7 @@ export default function GatedCommunitiesPage() {
   return (
     <>
       <Header />
-      <main className="bg-[#121212]">
+      <main className="bg-[#1F2A2E]">
         <PageHero
           eyebrow="PROPERTIES"
           title="Gated"
@@ -38,7 +38,7 @@ export default function GatedCommunitiesPage() {
         />
 
         <section className="mx-auto max-w-6xl px-6 py-24">
-          <p className="max-w-3xl text-base leading-relaxed text-[#8C8781]">
+          <p className="max-w-3xl text-base leading-relaxed text-[#D4D8DA]">
             SCI Royal Estate is developing secure gated residential
             communities in Cameroon. Homes within our gated communities are
             designed and built by SCI Royal Estate&apos;s architectural and
@@ -47,14 +47,14 @@ export default function GatedCommunitiesPage() {
 
           <div className="mt-16 grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
             <div>
-              <p className="text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+              <p className="text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
                 SECURITY &amp; ACCESS
               </p>
-              <h2 className="mt-4 text-3xl font-bold text-[#E8E5E0]">
+              <h2 className="mt-4 text-3xl font-bold text-white">
                 Built Around{" "}
-                <em className="italic text-[#C9A549]">Security</em>
+                <em className="italic text-[#D4BC85]">Security</em>
               </h2>
-              <p className="mt-4 text-sm leading-relaxed text-[#8C8781]">
+              <p className="mt-4 text-sm leading-relaxed text-[#D4D8DA]">
                 Every SCI Royal Estate gated community is built around
                 security. Residents benefit from 24/7 manned security, CCTV
                 surveillance across the estate, and controlled access
@@ -63,8 +63,8 @@ export default function GatedCommunitiesPage() {
               <ul className="mt-6 space-y-3">
                 {SECURITY_FEATURES.map((item) => (
                   <li key={item} className="flex items-center gap-3">
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A549]" />
-                    <span className="text-sm text-[#E8E5E0]/80">{item}</span>
+                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#B89A5E]" />
+                    <span className="text-sm text-[#D4D8DA]/80">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -82,43 +82,43 @@ export default function GatedCommunitiesPage() {
 
           <div className="mt-20 grid grid-cols-1 gap-16 lg:grid-cols-2">
             <div>
-              <p className="text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+              <p className="text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
                 AMENITIES
               </p>
-              <h2 className="mt-4 text-3xl font-bold text-[#E8E5E0]">
+              <h2 className="mt-4 text-3xl font-bold text-white">
                 Community{" "}
-                <em className="italic text-[#C9A549]">Amenities</em>
+                <em className="italic text-[#D4BC85]">Amenities</em>
               </h2>
-              <p className="mt-4 text-sm leading-relaxed text-[#8C8781]">
+              <p className="mt-4 text-sm leading-relaxed text-[#D4D8DA]">
                 Our gated communities include shared amenities for
                 residents:
               </p>
               <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {AMENITIES.map((item) => (
                   <li key={item} className="flex items-center gap-3">
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A549]" />
-                    <span className="text-sm text-[#E8E5E0]/80">{item}</span>
+                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#B89A5E]" />
+                    <span className="text-sm text-[#D4D8DA]/80">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             <div>
-              <p className="text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+              <p className="text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
                 MANAGEMENT
               </p>
-              <h2 className="mt-4 text-3xl font-bold text-[#E8E5E0]">
+              <h2 className="mt-4 text-3xl font-bold text-white">
                 Estate{" "}
-                <em className="italic text-[#C9A549]">Management</em>
+                <em className="italic text-[#D4BC85]">Management</em>
               </h2>
-              <p className="mt-4 text-sm leading-relaxed text-[#8C8781]">
+              <p className="mt-4 text-sm leading-relaxed text-[#D4D8DA]">
                 Each community is supported by a dedicated estate management
                 and maintenance team responsible for the upkeep of common
                 areas, security operations, and day-to-day estate
                 administration.
               </p>
-              <p className="mt-4 flex items-center gap-3 text-sm text-[#E8E5E0]/80">
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A549]" />
+              <p className="mt-4 flex items-center gap-3 text-sm text-[#D4D8DA]/80">
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#B89A5E]" />
                 Dedicated management team
               </p>
             </div>

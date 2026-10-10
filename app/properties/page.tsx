@@ -13,7 +13,7 @@ export default function PropertiesPage() {
   return (
     <>
       <Header />
-      <main className="bg-[#121212] pt-20">
+      <main className="bg-[#1F2A2E] pt-20">
         <Divisions />
       </main>
       <Footer />

@@ -140,7 +140,7 @@ const PROCESS = [
 
 function Eyebrow({
   children,
-  color = "#C9A549",
+  color = "#D4BC85",
 }: {
   children: string;
   color?: string;
@@ -314,7 +314,7 @@ export default function ServicesPage() {
                 </ul>
                 <a
                   href="/contact"
-                  className="mt-6 inline-block bg-[#C9A549] px-8 py-3.5 text-xs font-semibold tracking-widest text-[#121212] transition hover:bg-[#b8943f]"
+                  className="mt-6 inline-block bg-[#B89A5E] px-8 py-3.5 text-xs font-semibold tracking-widest text-white transition hover:bg-[#9E8147]"
                 >
                   SPEAK TO OUR ADVISORY TEAM &rarr;
                 </a>
@@ -323,24 +323,24 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        <section className="bg-[#121212] px-6 py-20 text-center">
+        <section className="bg-[#1F2A2E] px-6 py-20 text-center">
           <Eyebrow>How We Work</Eyebrow>
-          <h2 className="mx-auto mt-3 max-w-2xl text-3xl font-bold text-[#E8E5E0] sm:text-4xl">
+          <h2 className="mx-auto mt-3 max-w-2xl text-3xl font-bold text-white sm:text-4xl">
             A considered process, not a hurried one.
           </h2>
           <div className="mx-auto mt-14 grid max-w-6xl grid-cols-1 gap-6 text-left sm:grid-cols-2 lg:grid-cols-4">
             {PROCESS.map((step) => (
               <div
                 key={step.num}
-                className="border border-[#C9A549]/40 p-6"
+                className="border border-[#B89A5E]/40 p-6"
               >
-                <span className="text-2xl font-normal text-[#C9A549]">
+                <span className="text-2xl font-normal text-[#B89A5E]">
                   {step.num}
                 </span>
-                <h3 className="mt-2 text-lg font-semibold text-[#E8E5E0]">
+                <h3 className="mt-2 text-lg font-semibold text-white">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#8C8781]">
+                <p className="mt-2 text-sm leading-relaxed text-[#A8ADB0]">
                   {step.description}
                 </p>
               </div>
@@ -362,7 +362,7 @@ export default function ServicesPage() {
             </p>
             <a
               href="/contact"
-              className="mt-8 inline-block bg-[#9E8147] px-8 py-3.5 text-xs font-semibold tracking-widest text-white transition hover:bg-[#8a7039]"
+              className="mt-8 inline-block bg-[#B89A5E] px-8 py-3.5 text-xs font-semibold tracking-widest text-white transition hover:bg-[#9E8147]"
             >
               GET IN TOUCH &rarr;
             </a>

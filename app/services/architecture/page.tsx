@@ -44,7 +44,7 @@ export default function ArchitecturePage() {
   return (
     <>
       <Header />
-      <main className="bg-[#121212]">
+      <main className="bg-[#1F2A2E]">
         <PageHero
           eyebrow="SERVICES"
           title="Architecture &"
@@ -53,25 +53,25 @@ export default function ArchitecturePage() {
         />
 
         <section className="mx-auto max-w-6xl px-6 py-24">
-          <p className="text-center text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+          <p className="text-center text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
             WHAT WE BUILD
           </p>
-          <h2 className="mt-3 text-center text-3xl font-bold text-[#E8E5E0] sm:text-4xl">
-            Project <em className="italic text-[#C9A549]">Categories</em>
+          <h2 className="mt-3 text-center text-3xl font-bold text-white sm:text-4xl">
+            Project <em className="italic text-[#D4BC85]">Categories</em>
           </h2>
 
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {PROJECT_CATEGORIES.map((cat) => (
               <div
                 key={cat.title}
-                className="flex items-start gap-3 rounded-sm border border-[#2E2E2E] p-5"
+                className="flex items-start gap-3 rounded-sm border border-white/15 p-5"
               >
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A549]" />
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#B89A5E]" />
                 <div>
-                  <h3 className="font-semibold text-[#E8E5E0]">
+                  <h3 className="font-semibold text-white">
                     {cat.title}
                   </h3>
-                  <p className="mt-1 text-sm text-[#8C8781]">
+                  <p className="mt-1 text-sm text-[#D4D8DA]">
                     {cat.description}
                   </p>
                 </div>
@@ -88,20 +88,20 @@ export default function ArchitecturePage() {
             />
           </div>
 
-          <p className="mt-20 text-center text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+          <p className="mt-20 text-center text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
             OUR SERVICES
           </p>
-          <h2 className="mt-3 text-center text-3xl font-bold text-[#E8E5E0] sm:text-4xl">
-            What We <em className="italic text-[#C9A549]">Offer</em>
+          <h2 className="mt-3 text-center text-3xl font-bold text-white sm:text-4xl">
+            What We <em className="italic text-[#D4BC85]">Offer</em>
           </h2>
 
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2">
             {OFFERINGS.map((item) => (
               <div key={item.title}>
-                <h3 className="text-lg font-semibold text-[#E8E5E0]">
+                <h3 className="text-lg font-semibold text-white">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#8C8781]">
+                <p className="mt-2 text-sm leading-relaxed text-[#D4D8DA]">
                   {item.description}
                 </p>
               </div>
@@ -111,13 +111,13 @@ export default function ArchitecturePage() {
           <div className="mt-16 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="/contact"
-              className="bg-[#C9A549] px-8 py-3.5 text-xs font-semibold tracking-widest text-[#121212] transition hover:bg-[#b8943f]"
+              className="bg-[#B89A5E] px-8 py-3.5 text-xs font-semibold tracking-widest text-white transition hover:bg-[#9E8147]"
             >
               REQUEST A CONSULTATION
             </a>
             <a
               href="/contact"
-              className="border border-[#C9A549] px-8 py-3.5 text-xs font-semibold tracking-widest text-[#C9A549] transition hover:bg-[#C9A549] hover:text-[#121212]"
+              className="border border-white/60 px-8 py-3.5 text-xs font-semibold tracking-widest text-white transition hover:bg-[#B89A5E] hover:border-[#B89A5E]"
             >
               CONTACT US
             </a>

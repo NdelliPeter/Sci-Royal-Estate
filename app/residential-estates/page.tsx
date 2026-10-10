@@ -22,7 +22,7 @@ export default function ResidentialEstatesPage() {
   return (
     <>
       <Header />
-      <main className="bg-[#121212]">
+      <main className="bg-[#1F2A2E]">
         <PageHero
           eyebrow="PROPERTIES"
           title="Residential"
@@ -33,21 +33,21 @@ export default function ResidentialEstatesPage() {
         <section className="mx-auto max-w-6xl px-6 py-24">
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
             <div>
-              <p className="text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+              <p className="text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
                 ABOUT THE PROJECT
               </p>
-              <h2 className="mt-4 text-3xl font-bold text-[#E8E5E0] sm:text-4xl">
-                Community <em className="italic text-[#C9A549]">Living</em>
+              <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
+                Community <em className="italic text-[#D4BC85]">Living</em>
               </h2>
-              <p className="mt-6 text-base leading-relaxed text-[#8C8781]">
+              <p className="mt-6 text-base leading-relaxed text-[#D4D8DA]">
                 SCI Royal Estate develops master-planned suburban housing
                 estates. Homes are moderately priced and targeted at the
                 middle class in Cameroon as well as the Cameroonian
                 diaspora. Each community will have 100+ homes and include
                 premium amenities.
               </p>
-              <p className="mt-4 text-base leading-relaxed text-[#8C8781]">
-                <span className="font-semibold text-[#E8E5E0]">
+              <p className="mt-4 text-base leading-relaxed text-[#D4D8DA]">
+                <span className="font-semibold text-white">
                   Target Location:
                 </span>{" "}
                 Mbankomo, Yaoundé — on the outskirts of Yaoundé on the main
@@ -55,17 +55,17 @@ export default function ResidentialEstatesPage() {
                 centre.
               </p>
 
-              <p className="mt-10 text-xs font-semibold tracking-[0.3em] text-[#C9A549]">
+              <p className="mt-10 text-xs font-semibold tracking-[0.3em] text-[#D4BC85]">
                 AMENITIES
               </p>
-              <h3 className="mt-3 text-2xl font-bold text-[#E8E5E0]">
-                Community <em className="italic text-[#C9A549]">Amenities</em>
+              <h3 className="mt-3 text-2xl font-bold text-white">
+                Community <em className="italic text-[#D4BC85]">Amenities</em>
               </h3>
               <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {AMENITIES.map((item) => (
                   <li key={item} className="flex items-center gap-3">
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9A549]" />
-                    <span className="text-sm text-[#E8E5E0]/80">{item}</span>
+                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#B89A5E]" />
+                    <span className="text-sm text-[#D4D8DA]/80">{item}</span>
                   </li>
                 ))}
               </ul>

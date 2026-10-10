@@ -58,7 +58,7 @@ export default function Header() {
       : pathname.startsWith(href.split("#")[0]) && href !== "/#divisions";
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-[#2E2E2E] bg-[#121212]/95 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-[#E3DDD1] bg-white/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 lg:px-10">
         <Link href="/" className="flex items-center">
           <Image
@@ -75,20 +75,22 @@ export default function Header() {
               <div key={item.label} className="group relative">
                 <Link
                   href={item.href}
-                  className={`flex items-center gap-1 py-6 text-xs font-semibold tracking-widest transition hover:text-[#C9A549] ${
-                    isActive(item.href) ? "text-[#C9A549]" : "text-[#E8E5E0]"
+                  className={`flex items-center gap-1 border-b-2 pt-6 pb-2 text-xs font-semibold tracking-widest transition hover:text-[#9E8147] ${
+                    isActive(item.href)
+                      ? "border-[#B89A5E] text-[#9E8147]"
+                      : "border-transparent text-[#1F2A2E]"
                   }`}
                 >
                   {item.label}
                   <ChevronDown />
                 </Link>
 
-                <div className="invisible absolute left-0 top-full w-64 -translate-y-2 border border-[#2E2E2E] bg-[#1A1A1A] opacity-0 shadow-xl transition-all duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                <div className="invisible absolute left-0 top-full w-64 -translate-y-2 border border-[#E3DDD1] bg-white opacity-0 shadow-lg transition-all duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
                   {item.dropdown.map((sub) => (
                     <Link
                       key={sub.href}
                       href={sub.href}
-                      className="block px-5 py-3 text-xs font-semibold tracking-widest text-[#E8E5E0] transition hover:bg-[#242424] hover:text-[#C9A549]"
+                      className="block px-5 py-3 text-xs font-semibold tracking-widest text-[#1F2A2E] transition hover:bg-[#F7F3EC] hover:text-[#9E8147]"
                     >
                       {sub.label}
                     </Link>
@@ -99,8 +101,10 @@ export default function Header() {
               <Link
                 key={item.label}
                 href={item.href}
-                className={`flex items-center gap-1 text-xs font-semibold tracking-widest transition hover:text-[#C9A549] ${
-                  isActive(item.href) ? "text-[#C9A549]" : "text-[#E8E5E0]"
+                className={`flex items-center gap-1 border-b-2 pt-6 pb-2 text-xs font-semibold tracking-widest transition hover:text-[#9E8147] ${
+                  isActive(item.href)
+                    ? "border-[#B89A5E] text-[#9E8147]"
+                    : "border-transparent text-[#1F2A2E]"
                 }`}
               >
                 {item.label}
@@ -111,7 +115,7 @@ export default function Header() {
 
         <Link
           href="/contact"
-          className="hidden rounded-sm border border-[#C9A549] px-5 py-2.5 text-xs font-semibold tracking-widest text-[#C9A549] transition hover:bg-[#C9A549] hover:text-[#121212] lg:inline-block"
+          className="hidden bg-[#B89A5E] px-5 py-2.5 text-xs font-semibold tracking-widest text-white transition hover:bg-[#9E8147] lg:inline-block"
         >
           GET IN TOUCH
         </Link>
@@ -122,14 +126,14 @@ export default function Header() {
           className="flex flex-col gap-1.5 lg:hidden"
           onClick={() => setOpen((v) => !v)}
         >
-          <span className="h-0.5 w-6 bg-[#E8E5E0]" />
-          <span className="h-0.5 w-6 bg-[#E8E5E0]" />
-          <span className="h-0.5 w-6 bg-[#E8E5E0]" />
+          <span className="h-0.5 w-6 bg-[#1F2A2E]" />
+          <span className="h-0.5 w-6 bg-[#1F2A2E]" />
+          <span className="h-0.5 w-6 bg-[#1F2A2E]" />
         </button>
       </div>
 
       {open && (
-        <div className="border-t border-[#2E2E2E] bg-[#121212] lg:hidden">
+        <div className="border-t border-[#E3DDD1] bg-white lg:hidden">
           <nav className="flex flex-col px-6 py-4">
             {NAV_ITEMS.map((item) =>
               item.dropdown ? (
@@ -137,7 +141,7 @@ export default function Header() {
                   <div className="flex items-center justify-between py-2">
                     <Link
                       href={item.href}
-                      className="text-sm font-semibold tracking-widest text-[#E8E5E0]"
+                      className="text-sm font-semibold tracking-widest text-[#1F2A2E]"
                       onClick={() => setOpen(false)}
                     >
                       {item.label}
@@ -150,7 +154,7 @@ export default function Header() {
                           v === item.label ? null : item.label
                         )
                       }
-                      className={`p-1 text-[#E8E5E0] transition-transform ${
+                      className={`p-1 text-[#1F2A2E] transition-transform ${
                         openMobileSubmenu === item.label ? "rotate-180" : ""
                       }`}
                     >
@@ -158,12 +162,12 @@ export default function Header() {
                     </button>
                   </div>
                   {openMobileSubmenu === item.label && (
-                    <div className="ml-4 flex flex-col border-l border-[#2E2E2E] pl-4">
+                    <div className="ml-4 flex flex-col border-l border-[#E3DDD1] pl-4">
                       {item.dropdown.map((sub) => (
                         <Link
                           key={sub.href}
                           href={sub.href}
-                          className="py-2 text-xs font-semibold tracking-widest text-[#8C8781] hover:text-[#C9A549]"
+                          className="py-2 text-xs font-semibold tracking-widest text-[#6E7478] hover:text-[#9E8147]"
                           onClick={() => setOpen(false)}
                         >
                           {sub.label}
@@ -176,7 +180,7 @@ export default function Header() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="py-2 text-sm font-semibold tracking-widest text-[#E8E5E0]"
+                  className="py-2 text-sm font-semibold tracking-widest text-[#1F2A2E]"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
@@ -185,7 +189,7 @@ export default function Header() {
             )}
             <Link
               href="/contact"
-              className="mt-2 rounded-sm border border-[#C9A549] px-5 py-2.5 text-center text-xs font-semibold tracking-widest text-[#C9A549]"
+              className="mt-2 bg-[#B89A5E] px-5 py-2.5 text-center text-xs font-semibold tracking-widest text-white"
               onClick={() => setOpen(false)}
             >
               GET IN TOUCH
